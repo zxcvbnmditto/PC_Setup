@@ -62,7 +62,7 @@ torch.cuda.device_count()
 
 ### Docker
 [Reference](https://docs.docker.com/desktop/install/ubuntu/)
-[Docker Desktop deb](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.26.1-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64)
+
 ```
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -79,6 +79,9 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+
+Install Docker Desktop UI with deb
+[Docker Desktop deb](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.26.1-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64)
 
 Docker Hub gpg key
 This allows Docker Desktop to access the remote Docker Repository
