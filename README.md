@@ -1,5 +1,24 @@
 # Setup
 
+### GPU Driver
+Use ubuntu-driver proprietary driver
+Software & Updates -> Additional Drivers
+
+This time I am using nvidia-driver-535
+```
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.146.02             Driver Version: 535.146.02   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce GTX 1080 Ti     Off | 00000000:1D:00.0  On |                  N/A |
+| 11%   52C    P8              21W / 280W |    538MiB / 11264MiB |     19%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+```
+
 ### Necessities
 ```
 sudo apt-get install git vim htop ibus-chewing
