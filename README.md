@@ -2,7 +2,7 @@
 
 Necessities
 ```
-sudo apt-get install git vim htop
+sudo apt-get install git vim htop ibus-chewing
 ```
 
 Git
