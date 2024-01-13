@@ -22,6 +22,25 @@ rm -rf ~/miniconda3/miniconda.sh~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init bash
 ```
 
+### Verify Pytorch using GPU
+Now torch ships with cuda & cudnn binaries. No need to undergo the process of installing those from source
+
+```
+conda create --name torch-gpu-verify python=3.10
+conda activate torch-gpu-verify
+pip install numpy torch
+```
+
+```
+import torch
+
+# This should be true
+torch.cuda.is_available()
+
+# This should not be zero
+torch.cuda.device_count()
+```
+
 ### Docker
 [Reference](https://docs.docker.com/desktop/install/ubuntu/)
 [Docker Desktop deb](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.26.1-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64)
